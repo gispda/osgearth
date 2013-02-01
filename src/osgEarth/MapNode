@@ -24,6 +24,7 @@
 #include <osgEarth/Map>
 #include <osgEarth/MapNodeOptions>
 #include <osgEarth/SpatialReference>
+#include <osgEarth/TerrainEngineNode>
 
 namespace osgEarth
 {
@@ -215,7 +216,7 @@ namespace osgEarth
         ModelLayerNodeMap        _modelLayerNodes;
         osg::Group*              _maskLayerNode;
         unsigned                 _lastNumBlacklistedFilenames;
-        TerrainEngineNode*       _terrainEngine;
+        osg::ref_ptr<TerrainEngineNode> _terrainEngine;
         bool                     _terrainEngineInitialized;
         osg::Group*              _terrainEngineContainer;
 
