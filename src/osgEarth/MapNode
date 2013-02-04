@@ -30,7 +30,6 @@ namespace osgEarth
 {
     class OverlayDecorator;
     class Terrain;
-    class TerrainEngineNode;
 
     /**
      * OSG Node that forms the root of an osgEarth map. This node is a "view" component
